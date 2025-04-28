@@ -24,7 +24,7 @@
 extern "C" {
 #endif
 
-#define metal_yield() metal_cpu_yield()
+#define metal_yield() metal_sleep_usec(1000)
 
 #define METAL_INIT_DEFAULTS				\
 {							\
